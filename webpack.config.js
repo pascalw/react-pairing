@@ -57,9 +57,7 @@ if (isProd) {
 module.exports = {
     entry: {
         app: "./src/index.js",
-        vendor: [
-            "react", "react-dom"
-        ]
+        vendor: Object.keys(require("./package.json")["dependencies"])
     },
     output: {
         path: out,

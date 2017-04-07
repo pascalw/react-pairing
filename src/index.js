@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
+import I18n from "i18n-js";
+
 import store from "./store";
 import './styles/main.scss';
 
